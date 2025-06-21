@@ -31,7 +31,7 @@ else:
     print("No se cumplió la funcion")
 
 if len(vehiculos) >3:
-    vehiculos.remove("Moto")
+    vehiculos.pop(0)
     print(f"La lista actualizada {vehiculos}")
 else:
     print("No se cumplió la funcion")
@@ -69,3 +69,24 @@ if "Licencia activa" in habilitados:
 else:
     print("No se cumplió la condicion")
 
+if registro:
+    registro=["Ciudad"]="Bogotá"
+    print(f"Diccionario actualizado: {registro}")
+else:
+    ("No existe diccionario llamado registro")
+
+if "Bicicleta" not in vehiculos:
+    vehiculos.append("Bicicleta")
+    print(f"Lista actualizada {conductores}")
+else:
+    print("Bicicleta ya está en la lista vehiculos")
+
+if "Julián" not in conductores:
+    conductores.append("Julián")
+    print(f"Lista actualizada {conductores}")
+else:
+    print("Julián ya está en la lista conductores")
+
+print(f"Listas: Conductores {conductores}, vehiculos {vehiculos}, habilitados {habilitados}, movilidad {movilidad}")
+print(f"Tupla creada {vehiculo_extra}")
+print(f"Diccionario creado {registro}")
